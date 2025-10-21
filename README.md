@@ -50,8 +50,8 @@ erDiagram
     BIGINT book_id
     BIGINT category_id
   }
-  BOOK_CATEGORIES }o--|| BOOKS : (book_id)
-  BOOK_CATEGORIES }o--|| CATEGORIES : (category_id)
+  BOOK_CATEGORIES }o--|| BOOKS : "book_id"
+  BOOK_CATEGORIES }o--|| CATEGORIES : "category_id"
 ```
 
 ## Indexes
