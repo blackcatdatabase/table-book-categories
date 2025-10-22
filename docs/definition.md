@@ -1,4 +1,4 @@
-<!-- Auto-generated from schema-defs.psd1 @ 0d1e984 (2025-10-21T22:04:56+02:00) -->
+<!-- Auto-generated from schema-map.psd1 @ 6cefe8e (2025-10-22T20:27:41+02:00) -->
 # Definition – book_categories
 
 Many-to-many relationship between books and categories.
@@ -6,3 +6,5 @@ Many-to-many relationship between books and categories.
 ## Columns
 | Column | Type | Null | Default | Description | Notes |
 |-------:|:-----|:----:|:--------|:------------|:------|
+| book_id | BIGINT UNSIGNED | NO | — | Book (FK books.id). |  |
+| category_id | BIGINT UNSIGNED | NO | — | Category (FK categories.id). |  |
