@@ -65,4 +65,3 @@ erDiagram
 
 ## License
 Distributed under the **BlackCat Store Proprietary License v1.0**. See `LICENSE`.
-
