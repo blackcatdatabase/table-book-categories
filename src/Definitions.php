@@ -6,7 +6,7 @@ namespace BlackCat\Database\Packages\BookCategories;
 final class Definitions {
     // --- základní metadata ---
     public static function table(): string { return 'book_categories'; }
-    public static function contractView(): string { return 'v_book_categories_contract'; }
+    public static function contractView(): string { return 'vw_book_categories'; }
     /** @return string[] */
     public static function columns(): array { return [ 'book_id', 'category_id' ]; }
     public static function pk(): string { return 'book_id'; }
