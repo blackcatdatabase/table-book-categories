@@ -32,7 +32,7 @@ final class Criteria extends BaseCriteria
     /** Columns that are safe to use inside WHERE filters. */
     protected function filterable(): array
     {
-        return [ 'tenant_id', 'book_id', 'category_id' ];
+        return [ 'tenant_id', 'book_id', 'category_id', 'created_at', 'updated_at' ];
     }
 
     /** Columns used for full-text LIKE/ILIKE searches. */
@@ -44,7 +44,7 @@ final class Criteria extends BaseCriteria
 /** Columns allowed in ORDER BY (falls back to filterable() when empty). */
 protected function sortable(): array
 {
-    return [ 'tenant_id', 'book_id', 'category_id' ];
+    return [ 'tenant_id', 'book_id', 'category_id', 'created_at', 'updated_at' ];
 }
 
     /**
@@ -109,6 +109,12 @@ protected function sortable(): array
     public function forTenant(int|string|array $tenantId): static {
         if (is_array($tenantId)) { return $this->where('tenant_id', 'IN', $tenantId); }
         return $this->where('tenant_id', '=', $tenantId);
+    }
+    public function createdBetween(?\DateTimeInterface $from, ?\DateTimeInterface $to): static {
+        return $this->between('created_at', $from, $to);
+    }
+    public function updatedSince(\DateTimeInterface $ts): static {
+        return $this->where('updated_at', '>=', $ts);
     }
 
 }

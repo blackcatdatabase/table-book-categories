@@ -38,7 +38,9 @@ CREATE OR REPLACE ALGORITHM=MERGE SQL SECURITY INVOKER VIEW vw_book_categories A
 SELECT
   tenant_id,
   book_id,
-  category_id
+  category_id,
+  created_at,
+  updated_at
 FROM book_categories;
 SQL;
         } else {
@@ -47,7 +49,9 @@ CREATE OR REPLACE VIEW vw_book_categories AS
 SELECT
   book_id,
   tenant_id,
-  category_id
+  category_id,
+  created_at,
+  updated_at
 FROM book_categories;
 SQL;
         }
