@@ -12,7 +12,9 @@ final class BookCategoryDto implements \JsonSerializable {
     public function __construct(
         public readonly int $tenantId,
         public readonly int $bookId,
-        public readonly int $categoryId
+        public readonly int $categoryId,
+        public readonly \DateTimeImmutable $createdAt,
+        public readonly \DateTimeImmutable $updatedAt
     ) {}
 
     /** Suitable for serialization/logging (without large blobs). */
