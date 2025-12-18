@@ -1,0 +1,23 @@
+{
+  "tables": {
+    "book_categories": {
+      "columns": {
+        "book_id": {
+          "strategy": "passthrough"
+        },
+        "category_id": {
+          "strategy": "passthrough"
+        },
+        "created_at": {
+          "strategy": "passthrough"
+        },
+        "tenant_id": {
+          "strategy": "passthrough"
+        },
+        "updated_at": {
+          "strategy": "passthrough"
+        }
+      }
+    }
+  }
+}
