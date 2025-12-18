@@ -3,10 +3,13 @@
 Many-to-many relationship between books and categories.
 
 ## Columns
-| Column | Type | Null | Default | Description |
-| --- | --- | --- | --- | --- |
-| book_id | BIGINT | NO |  | Book (FK books.id). |
-| category_id | BIGINT | NO |  | Category (FK categories.id). |
+| Column | Type | Null | Default | Description | Crypto |
+| --- | --- | --- | --- | --- | --- |
+| tenant_id | mysql: BIGINT | NO |  | Owning tenant (FK tenants.id). |  |
+| book_id | mysql: BIGINT | NO |  | Book (FK books.id). |  |
+| category_id | BIGINT | NO |  | Category (FK categories.id). |  |
+| created_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Creation timestamp (UTC). |  |
+| updated_at | mysql: DATETIME(6) / postgres: TIMESTAMPTZ(6) | NO | CURRENT_TIMESTAMP(6) | Update timestamp (UTC). |  |
 
 ## Engine Details
 
