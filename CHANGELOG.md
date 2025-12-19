@@ -10,6 +10,11 @@
 - 2025-10-23: (umbrella) fix(umbrella): bump packages submodules after PHP codegen — @[7f780dd]
 
 #### Chore
+- 2025-12-18: chore: refresh release snapshot (#13) — @[fbdd290]
+- 2025-12-10: Fix. And yes it was stupid — @[faed197]
+- 2025-12-10: Fixed generators — @[7be0e15]
+- 2025-12-10: Maybe the datetime is different. So changed days to tick — @[84d5510]
+- 2025-12-10: Refreshed readmes, changelog — @[b03c13d]
 - 2025-12-10: Fixed definitions.md path — @[fe7e737]
 - 2025-12-10: Builddefinitions now shows both types — @[3327b9d]
 - 2025-12-09: Further debugging and ERD optimalization 1/* — @[6aa9154]
